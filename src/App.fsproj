@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- <Compile Include="Icon.fs" />
+    <Compile Include="cirrus/Css.fs" />
+    <Compile Include="cirrus/Button.fs" />
+   <Compile Include="cirrus/Layout.fs" />
+     <Compile Include="Header.fs" />
+    <Compile Include="App.fs" /> -->
+    <Compile Include="Main.fs" /> 
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fable.Elmish.Debugger" Version="3.0.3" />
+    <PackageReference Include="Fable.Elmish.HMR" Version="4.0.1" />
+    <PackageReference Include="Fable.Elmish.React" Version="3.0.1" />
+    <PackageReference Include="Feliz" Version="0.66.0" />
+    <PackageReference Include="Zanaptak.TypedCssClasses" Version="0.0.3" />
+  </ItemGroup>
+</Project>
