@@ -55,7 +55,8 @@ module ButtonComponent =
         | Large -> Ccls.BtnLarge
         | ExtraLarge -> Ccls.BtnXlarge
 
-    let button = React.functionComponent("Button", fun (props: ButtonProps) ->
+    let button = 
+        React.functionComponent("Button", fun (props: ButtonProps) ->
         
         let btn = 
             match props.elmType with

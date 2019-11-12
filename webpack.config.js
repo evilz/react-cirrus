@@ -65,8 +65,6 @@ module.exports = {
     // Add a hash to the output file name in production
     // to prevent browser caching if code changes
     output: {
-        library:"cirrus",
-        libraryTarget: 'commonjs',
         path: resolve(CONFIG.outputDir),
         filename: isProduction ? '[name].[hash].js' : '[name].js'
     },

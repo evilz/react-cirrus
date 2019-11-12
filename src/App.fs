@@ -52,12 +52,13 @@ let render (state: State) (dispatch: Msg -> unit) =
     let btnSize = [ button.tiny , nameof(button.tiny) ]
 
     Html.fragment [
-        App.Header.header
+        Feliz.Cirrus.Header.header
 
         Html.br []
         Html.br []
         Html.div [ prop.className Ccls.Large]
 
+        
         Cirrus.Flexbox.row [
             Cirrus.Flexbox.col12 [
                 Html.div [
@@ -202,5 +203,6 @@ let render (state: State) (dispatch: Msg -> unit) =
 
         ]
     ]
+
 
     

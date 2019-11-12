@@ -7,7 +7,7 @@ let appTests = testList "App tests" [
     testCase "update function works" <| fun _ ->
         // Simplified update that ignore commands/effects
         let update state msg = fst (App.update msg state)
-        let initialState = { Count = 0 }
+        let initialState = { Count = 0; Name ="toto" }
         let incomingMsgs =  [ Increment; Increment; Decrement ]
         let updatedState = List.fold update initialState incomingMsgs
         Expect.equal 1 updatedState.Count "Expected updated state to be 1"
